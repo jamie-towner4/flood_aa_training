@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2299.6">
+  <style type="text/css">
+    p.p5 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
+    p.p6 {margin: 0.0px 0.0px 12.0px 0.0px; font: 13.0px Courier; -webkit-text-stroke: #000000}
+    li.li3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9}
+    li.li5 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
+    span.s1 {font-kerning: none}
+    span.s2 {-webkit-text-stroke: 0px #000000}
+    span.s3 {text-decoration: underline ; font-kerning: none}
+    span.s4 {font: 12.0px Times; text-decoration: underline ; font-kerning: none; color: #0000e9; -webkit-text-stroke: 0px #0000e9}
+    span.s5 {font: 12.0px Times; font-kerning: none}
+    span.s6 {font: 13.0px Courier; font-kerning: none}
+    span.s7 {font: 13.0px Courier; -webkit-text-stroke: 0px #000000}
+    ul.ul1 {list-style-type: disc}
+  </style>
+</head>
+<body>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>Anticipatory Action Python set-up</b></span></h1>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>Table of contents</b></span></h3>
+<ul class="ul1">
+  <li class="li3"><span class="s2"></span><span class="s3">1. Clone the repository from GitHub</span></li>
+  <li class="li3"><span class="s2"></span><span class="s3">2. Create an environment with Anaconda</span></li>
+  <li class="li3"><span class="s2"></span><span class="s3">3. Download the data</span></li>
+  <li class="li3"><span class="s2"></span><span class="s3">4. Run the Anticipatory Action workflow</span></li>
+</ul>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>1. Clone the repository from GitHub</b></span></h2>
+<p class="p5"><span class="s1"><i>To complete prior to the training:</i></span></p>
+<p class="p5"><span class="s1">Start by installing <b>GitHub desktop</b> on your machine using this <a href="https://desktop.github.com/"><span class="s4">link</span></a>.</span></p>
+<p class="p5"><span class="s1">Then open GitHub desktop and follow this <a href="https://docs.github.com/en/desktop/overview/getting-started-with-github-desktop#part-1-installing-and-authenticating"><span class="s4">tutorial</span></a> to authenticate. This requires having a GitHub account, so please create an account if you don't have one yet.</span></p>
+<p class="p5"><span class="s1">Once this is done, you can follow these steps <a href="https://docs.github.com/en/desktop/adding-and-cloning-repositories/cloning-a-repository-from-github-to-github-desktop"><span class="s4">here</span></a> to clone the <a href="https://github.com/jamie-towner4/flood_aa_training.git"><span class="s5">flood_aa_training</span></a> repository.<span class="Apple-converted-space"> </span></span></p>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>2. Create an environment with Anaconda</b></span></h2>
+<p class="p5"><span class="s1"><i>To complete prior to the training:</i></span></p>
+<p class="p5"><span class="s1">You need to install the required Python libraries in an environment to run this package. To do this, we will use Anaconda, which can be downloaded freely <a href="https://www.anaconda.com/download/success"><span class="s4">here</span></a>.</span></p>
+<p class="p5"><span class="s1"><i>This will be done during the training:</i></span></p>
+<p class="p5"><span class="s1">Once you have it installed, open the <b>Anaconda PowerShell</b> prompt and use </span><span class="s6">cd</span><span class="s1"> (change directory) and </span><span class="s6">ls</span><span class="s1"> (list files and directories) commands to go to the folder where you have downloaded the <b>aa-env</b> repository.</span></p>
+<p class="p5"><span class="s1">For example, run the following command if the anticipatory-action repo has been cloned in the Documents folder:</span></p>
+<p class="p6"><span class="s1">cd Documents/flood_aa_training</span></p>
+<p class="p5"><span class="s1">Once you are in the flood_aa_training folder and are able to see the </span><span class="s6">aa-env.yml</span><span class="s1"> file when doing </span><span class="s6">ls</span><span class="s1">, please create a new environment named </span><span class="s6">aa-env</span><span class="s1"> that will contain all the required packages:</span></p>
+<p class="p6"><span class="s1">conda env create -f aa-env.yml</span></p>
+<p class="p5"><span class="s1">Now, activate the environment:</span></p>
+<p class="p6"><span class="s1">conda activate aa-env</span></p>
+<p class="p5"><span class="s1">To confirm that you have successfully activated the environment, your command line prompt should begin with <i>aa-env</i>.</span></p>
+<p class="p5"><span class="s1">Make sure it is active before running any workflow.</span></p>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>3. Download the data</b></span></h2>
+<p class="p5"><span class="s1"><i>To do prior to the training:</i></span></p>
+<p class="p5"><span class="s1">Please start downloading the data from <a href="https://data.earthobservation.vam.wfp.org/public-share/aa/zwe.zip"><span class="s4">that link</span></a> and save it within the <b>data</b> folder of the <i>flood_aa_training</i> repo. You may not have the data folder in your filesystem if you just cloned the github repository, in that case please create it within the flood_aa_training folder.</span></p>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>4. Run the Anticipatory Action workflow</b></span></h2>
+<p class="p5"><span class="s1"><i>This will be done during the training:</i></span></p>
+<p class="p5"><span class="s1">The training contains several scripts:</span></p>
+<ul class="ul1">
+  <li class="li5"><span class="s7"></span><span class="s6">run-full-verification.py</span><span class="s1"> contains the verification step with the computation of the roc scores and the triggers step with the selection of the optimal triggers. This one should be run only once, and in general before the beginning of the monitoring.<span class="Apple-converted-space"> </span></span></li>
+  <li class="li5"><span class="s7"></span><span class="s6">run-operational-monitoring.py</span><span class="s1"> contains the operational steps needed to process the forecasts received each month. This should be run each month to derive the probabilities, and these probabilities are then merged with the triggers to check the alerts.<span class="Apple-converted-space"> </span></span></li>
+</ul>
+<p class="p5"><span class="s1">If you want to work on these notebooks, please open the <b>Anaconda PowerShell</b> prompt and run the following commands:</span></p>
+<p class="p6"><span class="s1">cd &lt;path_to_AA_folder&gt;</span></p>
+<p class="p6"><span class="s1">conda activate aa-env</span></p>
+<p class="p6"><span class="s1">jupyter lab</span></p>
+<p class="p5"><span class="s1">Once the jupyter lab window is open, please click-right on the notebook you want to open, select <i>Open with</i> &gt; <i>Jupyter Notebook</i>.</span></p>
+</body>
+</html>
